@@ -1,6 +1,6 @@
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import { PuppeteerWebBaseLoader } from "langchain/document_loaders/web/puppeteer";
-const { convert } = require("html-to-text");
+import { convert } from "html-to-text";
 
 const splitter = new RecursiveCharacterTextSplitter({
   chunkSize: 2000,
